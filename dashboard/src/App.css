@@ -1,0 +1,266 @@
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+html, body {
+  /* background: rgba( 0, 193, 213, 1); */
+  background:#61DAFB
+}
+
+h1, p {
+  font-family: Lato;
+
+    display: block;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 3em;
+    font-weight: bold;
+  
+}
+
+.h1-1 {
+  font-family: Lato;
+  
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 2.5em;
+    font-weight: bold;
+  
+}
+
+h1, p {
+  font-family: Lato;
+  
+    display: block;
+    font-size: 2.5em;
+    text-align: center;
+    margin-top: 3.1em;
+    font-weight: bold;
+  
+}
+
+h5 {
+  color:white;
+  padding: 8px;
+}
+
+.row-align{
+  display: flex;
+  flex-direction: row;
+}
+.dashboardRow {
+  margin-top: 20px;
+}
+
+.dashboardPanel {
+  margin-top: 20px;
+  
+}
+
+
+.card {
+  border: none;
+  
+ 
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn:hover, .dropbtn:focus {
+  background-color: grey;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  float: right;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+.card-body {
+  background: rgba(19,124,144,1);
+  padding: 0px;
+  margin: 0.2rem;
+  
+}
+
+.card-title {
+  margin: 0.2rem;
+  text-align: center;
+}
+
+.bg-light {
+    background-color: rgba(19,124,144,1)!important;
+}
+.navlocation {
+  text-align:center;
+  justify-content: center;
+
+}
+
+.navbar-light .navbar-brand {
+    color: rgba(255,255,255,.9);
+    text-align:center;
+    justify-content: center;
+}
+.navbar {
+  justify-content: center !important;
+  }
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgba(255,255,255,1);
+    text-align:center;
+    justify-content: center;
+}
+
+.btn-outline-success {
+    color: white;
+    border-color: white;
+}
+
+.btn-outline-success:hover {
+    color: white;
+    background-color: rgba( 0, 193, 213, 0.5);
+    border-color: rgba( 0, 193, 213, 0.5);
+}
+
+.gauge {
+  min-height: 290px;
+  background: rgba(21,96,115,1);
+  padding: 10px;
+  padding-top: 40px;
+  
+ 
+}
+
+.gauge .wj-value {
+  color:white;
+}
+
+.gauge .wj-min {
+  color:rgba(135, 166, 191, 1);
+}
+
+.gauge .wj-max {
+  color:rgba(135, 166, 191, 1);
+}
+
+.gauge .wj-pointer {
+  fill:rgba( 171,125,246, 1);
+}
+
+.gauge .wj-face path {
+  fill:rgba(135, 166, 191, 1);
+  stroke-width: 0px;
+}
+
+.wj-flexchart {
+  padding: 10px;
+  margin: 0px;
+  border: none;
+  background: rgba(21,96,115,1);
+}
+
+.wj-flexchart .wj-label{
+    fill: rgba(135, 166, 191, 1);
+}
+
+.wj-flexchart .wj-axis-x .wj-line {
+    stroke:rgba(135, 166, 191, 1);
+    stroke-width: 1px;
+}
+
+.wj-flexchart .wj-axis-y .wj-gridline {
+    stroke:rgba(135, 166, 191, 1);
+    stroke-width: 1px;
+}
+
+.wj-flexgrid {
+    border: none;
+    border-radius: 0;
+    background: rgb(21,96,115);
+    color:#fff;
+}
+
+.wj-flexgrid .wj-header {
+    background: rgb(19,88,109);
+    color: white;
+}
+
+.wj-flexgrid .wj-state-selected {
+    background: rgb(171,125,246);
+}
+.wj-flexgrid .wj-state-multi-selected {
+    background: rgba(171,125,246, 0.3);
+}
+
+.wj-flexgrid .wj-cell:not(.wj-header):not(.wj-group):not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background: rgba(255,255,255,0.2);
+}
+
+.wj-flexgrid .wj-alt:not(.wj-header):not(.wj-group):not(.wj-state-selected):not(.wj-state-multi-selected) {
+    background: rgba(255,255,255,0.3);
+}
